@@ -1,0 +1,554 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: local('../fonts/Gilroy Regular'), local('../fonts/Gilroy-Regular'),
+        url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;   
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: local('../fonts/Gilroy Bold'), local('../fonts/Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('../fonts/Gilroy-Black.eot');
+    src: local('../fonts/Gilroy Black'), local('../fonts/Gilroy-Black'),
+        url('../fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Black.woff2') format('woff2'),
+        url('../fonts/Gilroy-Black.woff') format('woff'),
+        url('../fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Ligth';
+    src: url('../fonts/Gilroy-Light.eot');
+    src: local('../fonts/Gilroy Light'), local('../fonts/Gilroy-Light'),
+        url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('../fonts/Gilroy-Semibold.eot');
+    src: local('../fonts/Gilroy Semibold'), local('../fonts/Gilroy-Semibold'),
+        url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: local('../fonts/Gilroy Medium'), local('../fonts/Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Animations */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 10%;
+    background-color: #F4C644;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.shaking:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes shake {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    40% {
+        transform: translateX(-1px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    80% {
+        transform: translateX(1px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+/* end of animations */
+a {
+    font-family: 'Gilroy-Medium';
+    text-decoration: none;
+} 
+body {
+    background-color: #fff;    
+}
+.main-header {
+    /* margin: 0 0 0 8vw; */
+    background-color: #fff;
+}
+.main-header a>img {
+    width: 12vw;
+}
+.main-header .nav-link>img {
+    width: 2vw;
+}
+.main-header .navigation {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.1vw;
+}
+.main-header .social a {
+    color: rgb(33, 33, 33);
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.1vw;
+}
+.main-header a:hover {
+    color: rgb(7, 7, 7);
+}
+.main-header .call-bnt {
+    background-color: #F4C644;
+    border-radius: 8px;
+    line-height: 25px;
+    border: 2px solid #F4C644;
+}
+.main-header .call-bnt:hover {
+    color: rgb(33, 33, 33);   
+    background-color: #f0ecec;
+}
+.main-carousel {
+    padding: 0;
+    z-index: 999;
+}
+.main-carousel .background-template {
+    position: absolute;
+    width: 30vh;
+    left: 0;
+    top: 11.5vh;
+}
+.main-carousel .carousel {
+    padding-top: 15vh;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.main-carousel .carousel .carousel-item {
+    background-color: rgb(206, 206, 206);
+    height: 90vh;
+    border-radius: 10px;
+    padding-bottom: 1.25rem;
+}
+.main-carousel .carousel .carousel-inner {
+    background-color: rgb(255, 255, 255);
+    /* height: 80vh; */
+    border-radius: 10px;
+}
+.main-carousel .carousel-holder {
+    background-color: #fff;
+    height: 100%;
+
+}
+.main-carousel .slide-info .caption-block img {
+    position: absolute;
+    width: 15vw;
+    top: 6vh;
+    padding-left: 5vw;
+    z-index: 30;
+
+}
+.main-carousel .slide-info .caption-block h1 {
+    font-family: 'Gilroy-Bold';
+    font-size: 2vw;
+    color: #444444;
+    z-index: 100;
+    top: 16vh;
+    position: absolute;
+    padding-left: 13vw;
+
+}
+.main-carousel .slide-info .caption-block p {
+    font-family: 'Gilroy-Medium';
+    font-size: 1.1vw; 
+    padding-left: 5vw;
+    padding-top: 12vh;
+    width: 90%;
+} 
+.main-carousel .slide-info .caption-block button {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.2vw; 
+    margin-left: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 2px solid #F4C644;
+    width: 30%;
+    background-color: #F4C644;
+    border-radius: 10px;
+    line-height: 47px;
+    
+} 
+.main-carousel .slide-info .caption-block button:hover {
+    background-color: #f0ecec;
+    /* -webkit-box-shadow: inset -8px -8px 51px -38px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: inset -8px -8px 51px -38px rgba(0,0,0,0.75) !important;
+    box-shadow: inset -8px -8px 51px -38px rgba(0,0,0,0.75) !important; */
+}
+.main-carousel .slide-image > img {
+    width: 27vw;
+    margin-bottom: 20vh;
+
+}
+.main-carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.main-carousel .carousel-indicators {
+    bottom: -70px;
+}
+.main-carousel .carousel-indicators [data-bs-target] {
+    background-color: rgb(206, 206, 206);
+}
+.main-carousel .carousel-indicators .active{
+    background-color: #F4C644;
+}
+.main-carousel .carousel .carousel-control-next {
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+.main-carousel .carousel .carousel-control-prev {
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+.main-carousel .carousel-item .carousel-caption {
+    right: 0;
+    bottom: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: rgb(86, 86, 86);
+    background-color: rgb(246, 243, 243);
+    text-align: center;
+}
+.main-carousel .carousel .caption__unit {
+    height: 18vh;
+
+}
+.main-carousel .carousel .carousel-caption .caption__title {
+    margin-bottom: 2vh;
+    font-family: 'Gilroy-Regular';
+    font-size: 1.3vw;
+
+}
+.main-carousel .carousel .carousel-caption .caption__info {
+    margin-bottom: 0;
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.4vw;
+    text-decoration: underline 3px solid #F4C644;
+}
+
+.social-section {
+    height: 30vh;
+    padding: 10vh 0 0 0;
+}
+
+.social-section .btn-hover {
+    font-family: 'Gilroy-Regular';
+    font-size: 1.4vw !important;
+    width: 20vw;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    margin-left: 33vw;
+    margin-top: 5vh;
+    border-radius: 20px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.social-section .btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.social-section .btn-hover:focus {
+    outline: none;
+}
+.social-section .btn-hover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+.product-wrapper {
+    /* background-color: #fff; */
+    margin-top: 150px;
+}
+.product-wrapper .disclaymer {
+    font-family: 'Gilroy-Regular';
+    font-size: 1.1vw;
+}
+.product-bar {
+    background-color: #dbd9d9;
+    border-radius: 12px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    line-height: 47px;
+    cursor: pointer;
+    
+}
+.product-bar p {
+    padding-top: 15px;
+    font-family: 'Gilroy-Medium';
+    font-size: 1.2vw;
+}
+.product-bar .active {
+    background-color: #f0ecec;
+    border-radius: 12px;
+    text-decoration: underline #F4C644 3px;
+}   
+#prod-2 {
+    display: none;
+}
+#prod-3 {
+    display: none;
+}
+#prod-4 {
+    display: none;
+}
+
+.product-menu .row{
+    margin-right: 2vw;
+    margin-left: 2vw;
+    height: 65vh;
+}
+.product-menu .card {
+    transition: transform .6s; /* Animation */
+    -webkit-box-shadow: 4px 6px 20px -4px rgba(171,171,171,1);
+    -moz-box-shadow: 4px 6px 20px -4px rgba(171,171,171,1);
+    box-shadow: 4px 6px 20px -4px rgba(171,171,171,1);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: 53vh;
+}
+
+.product-menu .card:hover {
+    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.product-table {
+    display: none;
+}
+.product-table .tbody {
+    padding-left: 50px !important;
+}
+.product-menu .card:hover > .product-table {
+    display: block;
+}
+.product-menu .card:hover {
+    height: 65vh;
+}
+.product-menu .product-table .data{
+    text-align: right !important;
+    color: #444444;
+    font-family: 'Gilroy-Medium';
+    font-size: 1.1vw;
+}
+.product-menu .product-table .column{
+    color: #3f3e3e;
+    font-family: 'Gilroy-Regular';
+    font-size: 1.1vw;
+    text-decoration: underline 2px solid #F4C644;
+}
+.product-menu .card:hover > img {
+    width: 10vw;
+    margin: 0 auto
+}
+
+.product-menu tbody, td, tfoot, th, thead, tr {
+    border: none;
+}
+.product-menu .card:hover > a {
+    background-color: #F4C644;
+}
+.product-menu .card-img, .card-img-top {
+    border-radius: 10px;
+
+}
+.product-menu .card h5 {
+    margin-top: 15px;
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.2vw;
+}
+
+.product-menu .card .price {
+    font-family: 'Gilroy-Bold';
+    font-size: 1.2vw;
+}
+.product-menu .card a {
+    position: sticky;
+    background-color: #fff;
+    color: #444444;
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.1vw;
+    border: 1px solid #acaaaa;
+    border-radius: 10px;
+    line-height: 35px;
+    width: 7vw;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.about-us {
+    padding: 10vh 3vw 5vh 3vw;
+}
+.about-us__title {
+    border-left: 4px #F4C644 solid;
+    padding-left: 10px;
+    margin-left: 3px;
+}
+.about-us__title h2 {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.8vw;
+}
+.about-us__inner {
+    /* height: 40vh; */
+    font-family: 'Gilroy-Regular';
+    font-size: 1.1vw;
+}
+.about-us__inner img {
+    width: 100%;
+}
+.bby {
+    border-bottom: 4px solid #F4C644;
+}
+
+.advantages {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10vw;
+    border-radius: 10px;
+    height: auto;
+}
+.advantages .background-template {
+    position: absolute;
+    width: 50vh;
+    right: 0;
+    top: 112.5vh;
+    z-index: -1;
+}
+.advantages__title {
+    border-left: 4px #F4C644 solid;
+    padding-left: 10px;
+    margin-left: 3px;
+    margin-top: 5vw;
+}
+.advantages__title h2 {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.8vw;
+}
+.advantages__table {
+    margin: 0 auto;
+    margin-top: 2vw;
+    border-radius: 10px !important;
+    height: auto;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.advantages .table>:not(caption)>*>* {
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-top: 1vw;
+} 
+.advantages .table>:not(:last-child)>:last-child>* {
+    padding-top: 1vw;
+    padding-bottom: 1vw !important;
+    border-bottom: 3px solid #F4C644;
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.2vw;
+    background-color: #dbd9d9;
+}
+.advantages th {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.1vw;
+}
+
+.advantages td {
+    font-family: 'Gilroy-Medium';
+    font-size: 1.05vw;
+}
+.advantages .undrl {
+    text-decoration: underline 3px solid #F4C644;
+}
+.advantages .bg-grey {
+    background-color: #dbd9d9;
+}
