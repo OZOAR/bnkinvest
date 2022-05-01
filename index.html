@@ -21,24 +21,25 @@
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="js/index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=92e81169-fc03-4ea2-8f0d-ebbe39190322&lang=ru_RU" type="text/javascript"></script>
       </head>
     <body>
         <header class="main-header fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-2 border-bottom shadow-sm">
-            <a href="/" class="d-flex justify-content-center col-md-4 text-center">
-                <img src="assets/svg/header_logo.svg" alt="">
+            <a href="/" class="d-flex justify-content-center col-md-3 col-sm-2 text-center">
+                <img src="assets/svg/header_logo.svg" class="brand-img" alt="">
             </a>
-            <ul class="nav col-5 col-md-auto mb-2 justify-content-center mb-md-0 navigation">
+            <ul class="nav col-md-4 col-md-auto col-sm-4 mb-2 justify-content-center mb-md-0 navigation">
                 <li><a href="#" class="nav-link px-2 link-secondary hover-underline-animation">Главная</a></li>
                 <li><a href="#" class="nav-link px-2 link-dark hover-underline-animation">Улуги</a></li>
                 <li><a href="#" class="nav-link px-2 link-dark hover-underline-animation">О нас</a></li>
                 <li><a href="#" class="nav-link px-2 link-dark hover-underline-animation">Контакты</a></li>
             </ul>
-            <ul class="nav col-lg-5 col-md-4 text-end social">
+            <ul class="nav col-md-5 col-sm-6 text-end social">
                 <li><a href="#" class="nav-link px-2 shaking"><img src="assets/img/telegram_white.png" alt="" onmouseover="this.src='assets/img/telegram_y.png'" onmouseout="this.src='assets/img/telegram_white.png'"></a></li>
                 <li><a href="#" class="nav-link px-2 shaking"><img src="assets/img/instagram.png" alt="" onmouseover="this.src='assets/img/instagram_y.png'" onmouseout="this.src='assets/img/instagram.png'"></a></li>
                 <li><a href="#" class="nav-link px-2 shaking"><img src="assets/img/whatsapp.png" alt="" onmouseover="this.src='assets/img/whatsapp_y.png'" onmouseout="this.src='assets/img/whatsapp.png'"></a></li>
                 <li><a href="tel:+375(29)664-94-34" class="nav-link px-3 my-1 telephone hover-underline-animation">+375(29)664-94-34</a></li>
-                <li><a type="button" class="nav-link pl-3 my-1 call-bnt shadow">Заказать звонок</a></li>
+                <li><a type="button" class="nav-link pl-3 my-1 call-bnt shadow-sm" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать звонок</a></li>
             </ul>
         </header>
         <section id="main__section">
@@ -177,20 +178,19 @@
               </table>
             </div>
           </div>
-
-          <div class="container product-wrapper">
-            <div class="product-bar shadow-sm d-flex flex-wrap align-items-center justify-content-center justify-content-md-between text-center">
-              <div id="cat1" onClick="makeSound(this.id)" class="col-md-3 active">
-                <p>GPU фермы</p>
+          <div class="container-fluid product-wrapper">
+            <div class="product-bar row text-center ">
+              <div  class="col-md-3 product-bar__inner ">
+                <div id="cat1" onClick="makeSound(this.id)" class="product-bar__elem active shadow-sm pe-1"><p>GPU фермы</p></div>
               </div>
-              <div id="cat2" onClick="makeSound(this.id)" class="col-md-3">
-                <p>Antminer</p>
+              <div class="col-md-3 product-bar__inner ">
+                <div  id="cat2" onClick="makeSound(this.id)"  class="product-bar__elem shadow-sm px-1"><p>Antminer</p></div>
               </div>
-              <div id="cat3" onClick="makeSound(this.id)" class="col-md-3">
-                <p>Whatsminer</p>
+              <div class="col-md-3 product-bar__inner ">
+                <div id="cat3" onClick="makeSound(this.id)" class="product-bar__elem shadow-sm px-1"><p>Whatsminer</p></div>
               </div>
-              <div id="cat4" onClick="makeSound(this.id)" class="col-md-3">
-                <p>Avalon</p>
+              <div class="col-md-3 product-bar__inner ">
+                <div id="cat4" onClick="makeSound(this.id)" class="product-bar__elem shadow-sm ps-1"><p>Avalon</p></div>
               </div>
             </div>
             <div id="prod-1" class="container product-menu">
@@ -666,7 +666,7 @@
           <div class="container social-section">
             <div class="col-md-12">
               <h2 class="text-center">
-                Актуальные прайсы, оборудование и другое смотри в инстаграм
+                Актуальные прайсы, оборудование и другое<br>смотри в нашем <img src="assets/img/instagram_colorized.png" width="32vw"> инстаграме
               </h2>
               <button class="btn-hover color-4  justify-content-center">Перейти в инстаграм</button>
             </div>
@@ -680,7 +680,7 @@
             <div class="row my-5">
               <div class="col-md-6">
                 <div class="about-us__inner pe-2">
-                  <img src="assets/img/tec64.png" alt="">
+                  <img src="assets/img/tec64.png" class="" alt="">
                 </div>
                 <div class="about-us__inner pe-2 my-3">
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -703,10 +703,10 @@
                 <div class="col-md-6">
                   <h2 class="pt-2">Топовое оборудование по лучшим ценам</h2>
                   <p>Заполните форму, чтобы получить онлайн подбор майнинг оборудования</p>
-                  <form action="POST" class="mt-5">
-                    <input type="text" name="" class="my-3" placeholder="Имя" id="">
-                    <input type="text" name="" class="my-1" placeholder="Номер телефона" id="">
-                    <button class="btn-hover color-4 mt-5">Получить предложение</button>
+                  <form action="mail.php" class="mt-5">
+                    <input  type="text" name="name" class="my-3" placeholder="Имя" id="">
+                    <input  type="text" name="telephone" class="my-1" placeholder="Номер телефона" id="" required>
+                    <input class="btn-hover color-4 mt-5" type="submit" value="Получить предложение">
                   </form>
                 </div>
                 <div class="col-md-6 text-end image-wrapper">
@@ -715,6 +715,116 @@
             </div>
           </div>
         </section>
+        <section>
+          <div class="container features">
+            <div class="row features__title">
+              <h2>Куда проще чем кажется</h2>
+            </div>
+            <div class="row features__header my-2">
+              <div class="col-md-1 ">
+                <img src="assets/svg/templ_line.svg" alt=""> 
+              </div>
+              <div class="col-md-11">
+                <p> Майнинг это очень просто тут тест на длину строки строкистроки строкистрокистроки строкистрокистрокистроки строкистрокис трокистроки.
+                  Получите бесплатную консультацию от наших специалистов и начните зарабатывать на майнинге уже сегодня. </p>
+              </div>
+            </div>
+            <div class="features__body row">
+            <div class="col-md-6 sm-12  features__body_row">
+              <div class="row">
+                <div class="col-md-1 fetures__holder">
+                  <img src="assets/svg/templ_column_sepr.svg" alt="">
+                </div>
+                <div class="col-md-11">
+                  <h3>СЕРТИФИЦИРОВАННОЕ МАЙНИНГ ОБОРУДОВАНИЕ</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen
+                    Lorem Ipsum passages, and more recently with desktop pub.</p>
+                </div>
+              </div>
+              <div class="row  features__body_row">
+                <div class="col-md-1  fetures__holder">
+                  <img src="assets/svg/templ_column_sepr.svg" alt="">
+                </div>
+                <div class="col-md-11">
+                  <h3>ПОЛУЧАЙТЕ АКТУАЛЬНУЮ АНАЛИТИКУ</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen
+                    Lorem Ipsum passages, and more recently with desktop pub.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 sm-12  features__body_row">
+              <div class="row">
+                <div class="col-md-1 fetures__holder">
+                  <img src="assets/svg/templ_column_sepr.svg" alt="">
+                </div>
+                <div class="col-md-11">
+                  <h3>СПЕЦИАЛИЗИРОВАННЫЙ МАЙНИНГ ДАТА-ЦЕНТР</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen
+                    Lorem Ipsum passages, and more recently with desktop pub.</p>
+                </div>
+              </div>
+              <div class="row  features__body_row">
+                <div class="col-md-1  fetures__holder">
+                  <img src="assets/svg/templ_column_sepr.svg" alt="">
+                </div>
+                <div class="col-md-11">
+                  <h3>КРУГЛОСУТОЧНАЯ ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen
+                    Lorem Ipsum passages, and more recently with desktop pub.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="features__footer row">
+            <div class="col-md-6 image-holder">
+              <img src="assets/img/devices_hiceos_2.png" alt="">
+            </div>
+            <div class="col-md-6 features_descr__block">
+              <div class="templ_holder">
+                <img src="assets/svg/templ_line.svg" alt="">
+              </div>
+                <p class="features__descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to make a type specimen
+                  Lorem Ipsum passages, and more recently with desktop pub.</p>
+
+            </div>
+          </div>
+          </div>
+        </section>
+        <section>
+          <div id='wrapper' class="container-fluid map-wrapper">
+            <div id="map" style="width: 100%; height: 30vw"></div>
+            <div id="over_map">
+              <div class="col-md-2 contact-block text-center shadow">
+                <h2 class="">Контактные данные</h2>
+                <p class="py-3">Республика Беларусь
+                  г. Минск,
+                  Сурганова 61,
+                  4 этаж, 63 офис</p>
+                  <p class="py-2"><b>ПН-ПТ</b> 9:00-18:00<br><b>СБ-ВС</b> Выходной</p>
+                  <div class="contact-block__wrapper">
+                    <a href="tel: +375(29)664-94-34" class="telephone py-2">+375(29)664-94-34</a>
+                    <button class="text-center shadow-sm">Обратный звонок</button>
+                  </div>
+                  <div class="social">
+                   <a href="#" class="pe-4 shaking"><img src="assets/img/telegram_white.png" alt="" onmouseover="this.src='assets/img/telegram_y.png'" onmouseout="this.src='assets/img/telegram_white.png'"></a>
+                    <a href="#" class="shaking"><img src="assets/img/instagram.png" alt="" onmouseover="this.src='assets/img/instagram_y.png'" onmouseout="this.src='assets/img/instagram.png'"></a>
+                    <a href="#" class="ps-4 shaking"><img src="assets/img/whatsapp.png" alt="" onmouseover="this.src='assets/img/whatsapp_y.png'" onmouseout="this.src='assets/img/whatsapp.png'"></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr>
         <footer>
           <div class="container-fluid main-footer">
             <div class="row">
@@ -747,7 +857,7 @@
               <div class="col-md-3">
                 <!-- <p class="footer__column ">Контакты</p> -->
                 <a href="tel: +375(29)664-94-34" class="footer__info telephone py-3 ps-3">+375(29)664-94-34</a>
-                <a href="" class="footer_link call-back shadow" type="btn">Обратный звонок</a>
+                <a href="" class="footer_link call-back shadow-sm" type="btn">Обратный звонок</a>
                 <div class="social py-3 justify-content-md-between">
                   <a href="#" class="ps-3 pe-4 shaking"><img src="assets/img/telegram_white.png" alt="" onmouseover="this.src='assets/img/telegram_y.png'" onmouseout="this.src='assets/img/telegram_white.png'"></a>
                   <a href="#" class="pe-4 shaking"><img src="assets/img/instagram.png" alt="" onmouseover="this.src='assets/img/instagram_y.png'" onmouseout="this.src='assets/img/instagram.png'"></a>
@@ -757,5 +867,86 @@
             </div>
           </div>
         </footer>
-    </body>
+        <!-- Modal -->
+        <div class="modal fade" id="bnkModal" tabindex="-1" aria-labelledby="BnkModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-scrollable">
+            <div class="modal-content px-2">
+              <div class="modal-header">
+                <h5 class="modal-title" id="BnkModalLabel">Заказ обратного звонка</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <p>Оставьте заявку на обратный звонок и наш менеджер свяжется с вами в течении нескольких минут</p>
+                </div>
+                <form action="POST">
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Ваше имя</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Номер телефона</label>
+                    <input class="form-control" placeholder="+375 (xx) xxx-xx-xx" id="recipient-num" required>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn text-center shadow-sm">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          // Функция ymaps.ready() будет вызвана, когда
+          // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+          ymaps.ready(init);
+          function init() {
+              // Создание карты.
+              var myMap = new ymaps.Map("map", {
+                  center: [53.930363, 27.577292],
+                  zoom: 17,
+                  controls: []
+              });
+              myMap.behaviors.disable('scrollZoom');
+
+              // Строка с адресом, который необходимо геокодировать
+              var address = 'Минск, ул. Сурганова, 61';
+              var working_hours = ' ПН-ПТ с 9:00 до 18:00';
+
+              // Ищем координаты указанного адреса
+              // https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/geocode-docpage/
+              var geocoder = ymaps.geocode(address);
+
+              // После того, как поиск вернул результат, вызывается callback-функция
+              geocoder.then(
+                  function (res) {
+
+                      // координаты объекта
+                      var coordinates = res.geoObjects.get(0).geometry.getCoordinates();
+                      // Добавление метки (Placemark) на карту
+                      var placemark = new ymaps.Placemark(
+                          coordinates, {
+                              hintContent: address + working_hours,
+                              balloonContentHeader: '',
+                              balloonContent: '<img src="assets/svg/header_logo.svg" alt=""><br><br><b>BNKcrypto - продажа, хостинг и <br>обслуживание майнинг оборудования</b><br><br><b>Адрес:</b><br>Минск, ул. Сурганова, 61<br><br><b>Режим работы:</b><br>ПН-ПТ с 9:00 до 18:00<br><br><b>Контактные данные:</b><br><a href="tel:+375(29)6649434">+375(29)664-94-34</a><br>',
+                              balloonContentFooter: 'Прием звонков - <b>круглосуточно</b>',
+                              iconContent: "BNKcrypto", 
+                          }, 
+                          // {
+                          //   balloonPanelMaxMapArea: 0
+                          // },
+                          {
+                              'preset': 'islands#yellowStretchyIcon',
+                            // Балун будем открывать и закрывать кликом по иконке метки.
+                              'hideIconOnBalloonOpen': false
+                          }
+                      );
+                      myMap.geoObjects.add(placemark);
+                      // placemark.balloon.open();
+                  }
+              );
+
+              }
+      </script>
+      </body>
 </html>

@@ -145,7 +145,7 @@ body {
     /* margin: 0 0 0 8vw; */
     background-color: #fff;
 }
-.main-header a>img {
+.main-header .brand-img {
     width: 12vw;
 }
 .main-header .nav-link>img {
@@ -309,6 +309,11 @@ body {
     height: 30vh;
     padding: 10vh 0 0 0;
 }
+.social-section h2 {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.9rem;
+    text-transform: uppercase;
+}
 .social-section  .btn-hover {
     margin-left: 33vw;
     margin-top: 5vh;
@@ -351,23 +356,25 @@ body {
 
 .product-wrapper {
     /* background-color: #fff; */
-    margin-top: 150px;
+    margin-top: 7rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
+
 .product-wrapper .disclaymer {
     font-family: 'Gilroy-Regular';
     font-size: 1.1vw;
 }
 .product-bar {
-    background-color: #dbd9d9;
+    /* background-color: #dbd9d9; */
     border-radius: 12px;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    line-height: 47px;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    line-height: 45px;
     cursor: pointer;
     
 }
 .product-bar p {
-    padding-top: 15px;
     font-family: 'Gilroy-Medium';
     font-size: 1.2vw;
 }
@@ -375,7 +382,20 @@ body {
     background-color: #f0ecec;
     border-radius: 12px;
     text-decoration: underline #F4C644 3px;
-}   
+}  
+
+
+.product-bar__elem {
+    padding-top: 15px;
+    padding-bottom: 1px;
+    border-radius: 12px;
+    background-color: #dbd9d9;
+    /* padding-bottom: 3px; */
+}
+.product-bar__elem:hover {
+    background-color: #f0ecec;
+    border-radius: 10px;
+}
 #prod-2 {
     display: none;
 }
@@ -400,11 +420,12 @@ body {
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    height: 55vh;
+    height: 26vw;
 }
 
 .product-menu .card:hover {
     transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    height: 65vh;
 }
 .product-table {
     display: none;
@@ -415,9 +436,7 @@ body {
 .product-menu .card:hover > .product-table {
     display: block;
 }
-.product-menu .card:hover {
-    height: 65vh;
-}
+
 .product-menu .product-table .data{
     text-align: right !important;
     color: #444444;
@@ -448,22 +467,22 @@ body {
 .product-menu .card h5 {
     margin-top: 15px;
     font-family: 'Gilroy-Semibold';
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 }
 
 .product-menu .card .price {
     font-family: 'Gilroy-Bold';
-    font-size: 1.2vw;
+    font-size: 1.3vw;
 }
 .product-menu .card a {
-    position: sticky;
+    position: relative;
     background-color: #fff;
     color: #444444;
     font-family: 'Gilroy-Semibold';
     font-size: 1.1vw;
     border: 1px solid #acaaaa;
     border-radius: 10px;
-    line-height: 35px;
+    line-height: 25px;
     width: 7vw;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -478,7 +497,8 @@ body {
 }
 .about-us__title h2 {
     font-family: 'Gilroy-Semibold';
-    font-size: 1.8vw;
+    font-size: 1.9rem;
+    text-transform: uppercase;
 }
 .about-us__inner {
     /* height: 40vh; */
@@ -514,7 +534,8 @@ body {
 }
 .advantages__title h2 {
     font-family: 'Gilroy-Semibold';
-    font-size: 1.8vw;
+    font-size: 1.9rem;
+    text-transform: uppercase;
 }
 .advantages__table {
     margin: 0 auto;
@@ -554,7 +575,7 @@ body {
     background-color: #dbd9d9;
 }
 .magnet {
-    margin: 0 10vw 8vw 10vw;
+    margin: 0 10vw 4vw 10vw;
 }
 .magnet-block {
     border-radius: 10px;
@@ -569,9 +590,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
 }
 .magnet-block h2 {
     font-family: 'Gilroy-Semibold';
-    font-size: 2.5vw;
+    font-size: 1.9rem;
     margin-top: 30px;
     padding-left: 30px;
+    text-transform: uppercase;
 }
 .magnet-block p {
     font-family: 'Gilroy-Medium';
@@ -607,9 +629,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
     border-radius: 10px;
     width: 100%;
 }
+
 .main-footer {
     background-color: #fff;
     height: auto;
+    padding-top: 5vh;
 }
 .main-footer .row {
     padding-left: 8vw;
@@ -649,6 +673,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
     font-size: 2.4vh;
     text-decoration: none;
 }
+.main-footer .telephone:hover {
+    text-decoration: underline 3px #F4C644;
+
+}
 .main-footer .call-back {
     display: table;
     text-align: center;
@@ -660,5 +688,179 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
     background-color: #F4C644;
     border-radius: 10px;
     line-height: 37px;
+
+}
+#wrapper { 
+    position: relative; 
+}
+#over_map { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    z-index: 99; 
+
+}
+.contact-block {
+    margin-top: 1vw;
+    margin-left: 10vw;
+    border-radius: 10px;
+    background-color: #fff;
+    height: auto;
+    width: 50%;
+    padding: 2vh;
+    padding-bottom: 20px;
+}
+.contact-block h2 {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.contact-block p {
+    font-family: 'Gilroy-Medium';
+    font-size: 1.1vw; 
+    text-align: center;
+    margin-bottom: 0;
+}
+.contact-block a {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.3vw;
+    text-decoration: underline #F4C644 solid 3px; 
+    text-align: center;
+    color: #444444;
+}
+.contact-block__wrapper {
+    padding-bottom: 10px;
+}
+.contact-block__wrapper a{
+    display: block;
+}
+.contact-block__wrapper button {
+    border-radius: 10px;
+    background-color: #F4C644;
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.2vw;
+    border: 2px solid #F4C644;
+    line-height: 45px;
+    width: 65%;
+}
+.contact-block .social a>img{
+    display: inline;
+    width: 4vh;
+}
+.features {
+    width: 80%;
+    margin: 0 auto;
+    /* margin-top: 10vw; */
+    border-radius: 10px;
+    height: auto;
+
+}
+.features__title {
+    border-left: 4px #F4C644 solid;
+    padding-left: 10px;
+    margin-top: 5vw;
+}
+.features__title h2 {
+    font-family: 'Gilroy-Semibold';     
+    font-size: 1.9rem;
+    text-transform: uppercase;
+}
+.features__header {
+    border-radius: 10px;
+    padding-top: 1vw;
+}
+.features__header p{
+    display: inline;
+    font-family: 'Gilroy-Regular';
+    font-size: 1.1vw;
+}
+.features__header img {
+    width: 4vw;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+
+}
+.fetures__holder img {
+    width: 0.3vw;
+    display: block;
+    margin-left: auto;
+}
+.features__body_row {
+    margin-top: 2vw;
+    
+}
+.features__body_row h3{
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.4vw;
+    text-transform: uppercase;
+}
+.features__body_row p {
+    font-family: 'Gilroy-Medium';
+    font-size: 1.1vw;
+}
+.features__footer .image-holder {
+
+}
+.features__footer .image-holder img{
+    width: 40vw;
+    bottom: 0;
+}
+.features__footer .templ_holder {
+    width: 5vw;
+} 
+.features_descr__block {
+    padding-top: 5vh;
+    padding-left: 5vh;
+}
+.features__descr__text {
+    padding-top: 3vh;
+    font-family: 'Gilroy-Regular';
+    font-size: 1.0vw;
+}
+.modal-title {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.7rem;
+    text-decoration: underline #F4C644 solid 3px; 
+
+}
+.modal-header .title-header {
+    /* padding-left: 10px; */
+}
+.modal-body p {
+    font-family: 'Gilroy-Medium';
+    font-size: 1.0rem;
+}
+
+.modal-body label {
+    font-family: 'Gilroy-Medium';
+    font-size: 0.9rem;    
+}
+.modal-body input {
+    font-family: 'Gilroy-Medium';
+    font-size: 1.0rem;
+}
+.modal-footer {
+    justify-content: center;
+}
+.modal-footer button {
+    font-family: 'Gilroy-Semibold';
+    font-size: 1.0rem;
+    text-align: center;
+    color: #444444;
+    border-radius: 10px;
+    background-color: #F4C644;
+    line-height: 34px;
+    width: 8rem;
+
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
 
 }

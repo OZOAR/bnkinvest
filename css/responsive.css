@@ -1,0 +1,181 @@
+@media (min-width: 990px) and (max-width:1200px){
+
+}
+
+@media (min-width: 600px) and (max-width:1200px){
+    h2 {
+        font-size: 1.6rem !important;
+    }
+   .main-header .brand-img {
+        width: 16vw !important;
+    }
+   .nav-link {
+        font-size: 1rem !important;
+        font-family: 'Gilroy-Semibold';
+    }
+    .main-header .nav-link>img {
+        width: 1.5rem !important; 
+        margin-top: 8px !important; 
+    } 
+    .main-header .telephone {
+        margin-top: 8px !important; 
+        font-size: 1rem !important;
+    }
+    .main-header .call-bnt {
+        /* line-height: 20px; */
+        font-size: 0.8rem !important;
+    }
+    .main-carousel .slide-info .caption-block h1 {
+        font-size: 1.8rem !important;
+        top: 5rem !important;
+    }
+    .main-carousel .carousel .carousel-item {
+        height: 75vh !important;
+    }
+    .main-carousel .slide-info .caption-block p {
+        font-size: 0.9rem !important;
+        padding-top: 4rem !important;
+    }
+    .main-carousel .slide-info .caption-block button {
+        width: 12rem !important;
+        font-size: 1.1rem !important;
+        line-height: 35px !important;
+    }
+    .main-carousel .carousel .carousel-caption .caption__title {
+        font-size: 1.2rem !important;
+    }
+    .main-carousel .carousel .carousel-caption .caption__info {
+        font-size: 1.2rem !important;
+    }
+    .main-carousel .background-template {
+        z-index: 1 !important;
+    }
+    .advantages {
+        width: 90% !important;
+        z-index: 999 !important;
+    }
+    .advantages__title {
+        z-index: 999 !important;
+        
+    }
+    .advantages .table>:not(:last-child)>:last-child>* {
+        font-size: 1.1rem !important;
+    }
+    .advantages .undrl{
+        font-size: 1.0rem !important;
+    }
+    .advantages td {
+        font-family: 'Gilroy-Regular' !important;
+        font-size: 0.9rem !important;
+    }
+    .product-wrapper .container{
+        margin: 0 auto !important;
+    }
+    .product-bar__elem {
+        height: 57px !important;
+        padding-top: 5px !important;
+    }
+    .product-bar p {
+        font-size: 1rem !important;
+    }
+    .product-menu {
+        /* margin-top: 2rem !important; */
+        height: 40vw !important;
+    }
+    .product-menu .card {
+        height: 20rem !important;
+    }
+    .product-menu .card .price {
+        font-size: 1rem !important;
+
+    }
+    .product-menu .card h5 {
+        font-size: 1rem !important;
+
+    }
+    .product-menu .card:hover {
+        transform: scale(1.05) !important; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        height: 60vh !important;
+    }
+    .product-menu .card a {
+        width: 6rem !important;
+        font-size: 1rem !important;
+    }
+    .product-menu .product-table .column {
+        font-size: 0.81rem !important;
+    }
+    .product-menu .product-table .data {
+        font-size: 0.81rem !important;
+
+    }
+    .product-wrapper .disclaymer {
+        font-size: 1.0rem !important;
+    }
+    .social-section .btn-hover {
+        width: 20rem !important;
+        margin-left: 29vw !important;
+        font-size: 1.1rem !important;
+    }
+    .about-us {
+        padding-top: 7rem !important;
+    }
+    .about-us__inner {
+        font-size: 0.9rem !important;
+    }
+    .fetures__holder img {
+        width: 0.2rem !important;
+    }
+    .features__body_row h3 {
+        font-size: 1rem !important;
+    }
+    .features__body_row p {
+        font-size: 0.9rem !important;
+        font-family: 'Gilroy-Regular' !important;
+    } 
+    .features__header p {
+        font-size: 0.85rem !important;
+    }
+    .features__descr__text {
+        font-size: 0.85rem !important;
+    }
+    #map {
+        height: 35vw !important;
+    }
+    .contact-block h2 {
+        font-size: 1.4rem !important;
+    }
+    .contact-block p {
+        font-size: 0.85rem !important;
+    }
+    .contact-block__wrapper button {
+        /* font-size: 0.85rem !important; */
+        line-height: 35px !important;
+    }
+    .main-footer .disclaymer-holder p {
+        font-size: 0.7rem !important;
+    }
+    .footer__info {
+        font-size: 0.8rem !important;
+    }
+    .main-footer a {
+        font-size: 0.9rem !important;
+    }
+    .main-footer .call-back {
+        margin-left: 15px !important;
+        width: 150px !important;
+    }
+    .main-footer .telephone {
+        text-align: center !important;
+        margin-left: 10px !important;
+    }
+    .main-footer .social a>img {
+        padding: 0 !important;
+        width: 1.8rem !important;
+    }
+}
+
+@media (min-width: 300px) and (max-width:600px){
+
+}
+
+
