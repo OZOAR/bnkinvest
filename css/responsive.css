@@ -2,7 +2,7 @@
 
 }
 
-@media (min-width: 600px) and (max-width:1200px){
+@media (min-width: 900px) and (max-width:1200px){
     h2 {
         font-size: 1.6rem !important;
     }
@@ -48,7 +48,7 @@
         font-size: 1.2rem !important;
     }
     .main-carousel .background-template {
-        z-index: 1 !important;
+        /* z-index: 1 !important; */
     }
     .advantages {
         width: 90% !important;
@@ -174,8 +174,13 @@
     }
 }
 
-@media (min-width: 300px) and (max-width:600px){
-
+@media (max-width:900px){
+    .main-header {
+        display: none !important;
+    }
+    .mobile-header {
+        display: block !important;
+    }
 }
 
 
