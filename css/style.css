@@ -354,7 +354,7 @@ body {
 
 .social-section {
     height: 30vh;
-    padding: 5px 0 0 0 0;
+    padding: 5vh 0 0 0;
 }
 .social-section .wrapper {
     border-radius: 10px;
@@ -718,6 +718,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
 .main-footer .disclaymer-holder p {
     font-family: 'Gilroy-Regular';
     font-size: 1.7vh;
+}
+.main-footer .social {
+    margin-top: 2vh;
 }
 .main-footer .social a>img {
     display: inline-block;
