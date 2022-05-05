@@ -170,13 +170,13 @@ body {
 .main-header a:hover {
     color: rgb(7, 7, 7);
 }
-.main-header .call-bnt {
+ .call-bnt {
     background-color: #F4C644;
     border-radius: 8px;
     line-height: 25px;
     border: 2px solid #F4C644;
 }
-.main-header .call-bnt:hover {
+ .call-bnt:hover {
     color: rgb(33, 33, 33);   
     background-color: #f0ecec;
 }

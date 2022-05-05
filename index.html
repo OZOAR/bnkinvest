@@ -47,19 +47,26 @@
 
         </header>
         <section class="mobile-header">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
             <div class="container-fluid">
               <img src="assets/svg/header_logo.svg" class="brand-img" alt="">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Features</a>
-                  <a class="nav-link" href="#">Pricing</a>
-                  <a class="nav-link disabled">Disabled</a>
-                </div>
+                <ul class="navbar-nav text-center">
+                  <li><a href="https://bnkcrypto.net" class="nav-link px-2 link-secondary hover-underline-animation">Главная</a></li>
+                  <li class="link nav-link px-2 hover-underline-animation" data-block="miner_catalog">Майнеры</li>
+                  <li class="link nav-link px-2 hover-underline-animation" data-block="hosting">Хостинг</li>
+                  <li class="link nav-link px-2 hover-underline-animation" data-block="contacts">Контакты</li>
+                </ul>
+                <ul class="navbar-nav col-sm-12 d-flex social">
+                  <!-- <li><a href="https://t.me/bnkcrypto_sales" target="_blank" class="nav-link px-2 shaking"><img src="assets/img/telegram_white.png" alt="" onmouseover="this.src='assets/img/telegram_y.png'" onmouseout="this.src='assets/img/telegram_white.png'"></a></li> -->
+                  <!-- <li><a href="https://instagram.com/bnk_crypto" target="_blank" class="nav-link px-2 shaking"><img src="assets/img/instagram.png"  alt="" onmouseover="this.src='assets/img/instagram_y.png'" onmouseout="this.src='assets/img/instagram.png'"></a></li> -->
+                  <!-- <li><a href="https://api.whatsapp.com/send?phone=375296649434" target="_blank" class="nav-link px-2 shaking"><img src="assets/img/whatsapp.png" alt="" onmouseover="this.src='assets/img/whatsapp_y.png'" onmouseout="this.src='assets/img/whatsapp.png'"></a></li> -->
+                  <li class="text-center"><img src="assets/img/telephone-call.png" width="10%" alt=""><a href="tel:+375(29)664-94-34" class="nav-link px-3 my-1 telephone hover-underline-animation">+375(29)664-94-34</a></li>
+                  <li><a type="button" class="nav-link pl-3 my-1 call-bnt shadow-sm text-center py-3" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать звонок</a></li>
+              </ul>
               </div>
             </div>
           </nav>

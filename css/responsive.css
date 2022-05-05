@@ -2,7 +2,7 @@
 
 }
 
-@media (min-width: 900px) and (max-width:1200px){
+@media (min-width: 901px) and (max-width:1200px){
     h2 {
         font-size: 1.6rem !important;
     }
@@ -174,12 +174,44 @@
     }
 }
 
-@media (max-width:900px){
+@media (min-width:200px) and (max-width:900px){
     .main-header {
         display: none !important;
     }
     .mobile-header {
         display: block !important;
+    }
+    .mobile-header .brand-img {
+        width: 28vh !important;
+        margin-left: 1rem;
+    }
+    .navbar-toggler {
+        border: none !important;
+    }
+    .navbar-light .navbar-toggler {
+        border: none !important;
+
+    }
+    .navbar-toggler:focus{
+        border: none !important;
+    }
+    .mobile-header .nav-link {
+        cursor: pointer;
+    }
+    .mobile-header .nav-link>img {
+        width: 2vw;
+    }
+    .navbar-nav {
+        height: 100%;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    .nav-link {
+        font-family: 'Gilroy-Medium';
+        font-size: 1.3rem;
+        color: rgb(35, 34, 34) !important;
+        padding-bottom: 1.2rem;
+        text-decoration: underline 2px #F4C644;
     }
 }
 
