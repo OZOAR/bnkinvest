@@ -55,17 +55,19 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav text-center">
-                  <li><a href="https://bnkcrypto.net" class="nav-link px-2 link-secondary hover-underline-animation">Главная</a></li>
-                  <li class="link nav-link px-2 hover-underline-animation" data-block="miner_catalog">Майнеры</li>
-                  <li class="link nav-link px-2 hover-underline-animation" data-block="hosting">Хостинг</li>
-                  <li class="link nav-link px-2 hover-underline-animation" data-block="contacts">Контакты</li>
+                  <li><a href="https://bnkcrypto.net" class="nav-elem px-2 link-secondary hover-underline-animation">Главная</a></li>
+                  <li class="link nav-elem px-2" data-block="miner_catalog">Майнеры</li>
+                  <li class="link nav-elem px-2" data-block="hosting">Хостинг</li>
+                  <li class="link nav-elem px-2" data-block="contacts">Контакты</li>
                 </ul>
-                <ul class="navbar-nav col-sm-12 d-flex social">
-                  <!-- <li><a href="https://t.me/bnkcrypto_sales" target="_blank" class="nav-link px-2 shaking"><img src="assets/img/telegram_white.png" alt="" onmouseover="this.src='assets/img/telegram_y.png'" onmouseout="this.src='assets/img/telegram_white.png'"></a></li> -->
-                  <!-- <li><a href="https://instagram.com/bnk_crypto" target="_blank" class="nav-link px-2 shaking"><img src="assets/img/instagram.png"  alt="" onmouseover="this.src='assets/img/instagram_y.png'" onmouseout="this.src='assets/img/instagram.png'"></a></li> -->
-                  <!-- <li><a href="https://api.whatsapp.com/send?phone=375296649434" target="_blank" class="nav-link px-2 shaking"><img src="assets/img/whatsapp.png" alt="" onmouseover="this.src='assets/img/whatsapp_y.png'" onmouseout="this.src='assets/img/whatsapp.png'"></a></li> -->
-                  <li class="text-center"><img src="assets/img/telephone-call.png" width="10%" alt=""><a href="tel:+375(29)664-94-34" class="nav-link px-3 my-1 telephone hover-underline-animation">+375(29)664-94-34</a></li>
-                  <li><a type="button" class="nav-link pl-3 my-1 call-bnt shadow-sm text-center py-3" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать звонок</a></li>
+                <div class="social text-center">
+                  <a href="https://t.me/bnkcrypto_sales" target="_blank" class="nav-elem px-2 col-sm-4"><img src="assets/img/telegram_white.png" alt="" onmouseover="this.src='assets/img/telegram_y.png'" onmouseout="this.src='assets/img/telegram_white.png'"></a>
+                  <a href="https://instagram.com/bnk_crypto" target="_blank" class="nav-elem px-2 col-sm-4"><img src="assets/img/instagram.png"  alt="" onmouseover="this.src='assets/img/instagram_y.png'" onmouseout="this.src='assets/img/instagram.png'"></a>
+                  <a href="https://api.whatsapp.com/send?phone=375296649434" target="_blank" class="nav-elem px-2 col-sm-4"><img src="assets/img/whatsapp.png" alt="" onmouseover="this.src='assets/img/whatsapp_y.png'" onmouseout="this.src='assets/img/whatsapp.png'"></a>
+                </div>
+                <ul class="navbar-nav col-sm-12 text-center">
+                  <li class="text-center"><img src="assets/img/telephone-call.png" width="10%" alt=""><a href="tel:+375(29)664-94-34" class="nav-elem px-3 my-1 telephone hover-underline-animation">+375(29)664-94-34</a></li>
+                  <li><a type="button"  class="nav-elem pl-3 my-1 call-bnt shadow-sm text-center py-3" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать звонок</a></li>
               </ul>
               </div>
             </div>
@@ -74,24 +76,27 @@
         <section id="main__section">
             <div class="main-carousel container-fluid ">
               <img src="assets/svg/tmpl_main_left.svg" class="background-template" alt="">
-              <div id="main__carousel" class="carousel slide" data-bs-ride="carousel">
+              <div id="main__carousel" class="carousel slide col-sm-12" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="#main__carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#main__carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#main__carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
                   </div>
                   <div class="carousel-inner shadow">
-                      <div class="carousel-item ">   
-                       <div class="carousel-holder d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
-                          <div class="col-md-7 col-sm-6 slide-info">
+                      <div class="carousel-item active">   
+                       <div  class="carousel-holder d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+                          <div class="col-md-7 col-sm-12 slide-info">
                             <div class="caption-block">
                               <img src="assets/svg/templ-text-wrapper.svg" alt="">
                               <h1>Antminer S19J PRO &mdash;<br>Лучший среди равных</h1>
                               <p>Самый мощный ASIC майнер компании Bitmain по лучшей цене. Доставим в любую точку мира. Звоните или оставляйте заявку уже сейчас!</p>
-                              <button class="btn shadow" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать</button>
+                              <button class="btn slider-btn shadow" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать</button>
                             </div>
                           </div>
-                          <div class="col-md-5 col-sm-6 slide-image text-left">
+                          <div class="col-md-5 col-sm-12 slide-image text-left">
                             <img src="assets/img/S19JP.webp" class="pulse" width="80%" alt="">
+                            <button class="btn slider-btn-mobile shadow" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать</button>
                           </div>
                         </div>       
                         <div class="carousel-caption  d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
@@ -113,19 +118,19 @@
                          </div>
                         </div>
                       </div>
-                      <div class="carousel-item ">
-                        <div class="rig-item"> 
+                       <div class="carousel-item ">
                           <div class="carousel-holder d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
                             <div class="col-md-7 col-sm-6 slide-info">
                               <div class="caption-block">
                                 <img src="assets/svg/templ-text-wrapper.svg" alt="">
-                                <h1>Ферма MSI Gaming 3060 TI &mdash;<br>Эфективный мультимайнинг</h1>
-                                <p>Самая энергоэфективная майнинг ферма на видеокартах MSI Gaming X 3060 TI. Соберем и установим за <b>3</b> дня.<br><br>Звоните или оставляйте заявку уже сейчас!</p>
-                                <button class="btn shadow" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать</button>
+                                <h1>Ферма MSI Gaming 3060 TI &mdash;Эфективный мультимайнинг</h1>
+                                <p class="mobile-py4">Самая энергоэфективная майнинг ферма на видеокартах MSI Gaming X 3060 TI. Соберем и установим за <b>3</b> дня.<br><br>Звоните или оставляйте заявку уже сейчас!</p>
+                                <button class="btn shadow slider-btn" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать</button>
                               </div>
                             </div>
                             <div class="col-md-5 col-sm-6 slide-image text-left">
                               <img src="assets/img/main-farm-2.jpg" class="pulse" width="110%" alt="">
+                              <button class="btn slider-btn-mobile shadow" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать</button>
                             </div>
                           </div>                          
                         <div class="carousel-caption  d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
@@ -148,19 +153,19 @@
                          </div>
                         </div>
                       </div>
-                      </div>
-                      <div class="carousel-item active">   
+                      <div class="carousel-item ">   
                         <div class="carousel-holder d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
                            <div class="col-md-7 col-sm-6 slide-info">
                              <div class="caption-block">
                                <img src="assets/svg/templ-text-wrapper.svg" alt="">
                                <h1>Промышленный<br>майнинг хостинг</h1>
                                <p>Специализированный дата-центр для вашего майнинг оборудования объемом до 30 мВт.</p>
-                               <button class="btn shadow" data-bs-toggle="modal" data-bs-target="#bnkModal">Подключиться</button>
+                               <button class="btn shadow slider-btn" data-bs-toggle="modal" data-bs-target="#bnkModal">Подключиться</button>
                              </div>
                            </div>
                            <div class="col-md-5 col-sm-6 slide-image text-right" >
                              <img src="assets/img/10_bobr.jpg" class="shadow" width="70%" style="border-radius: 10px;" alt="">
+                             <button class="btn slider-btn-mobile shadow" data-bs-toggle="modal" data-bs-target="#bnkModal">Заказать</button>
                            </div>
                          </div>       
                          <div class="carousel-caption  d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
@@ -331,7 +336,7 @@
               </div>
               <div class="col-md-3">
                 <div class="card">
-                  <img src="assets/img/farm_3060ti.webp" class="card-img-top" alt="...">
+                  <img src="assets/img/farm_3070.webp" class="card-img-top" alt="...">
                   <h5 class="card-title">Риг 3070 non LHR 8 карт</h5>
                   <table class="table product-table card-body">
                       <tbody>
@@ -353,7 +358,7 @@
                         </tr>
                       </tbody>
                   </table>
-                  <p class="card-text price">12,500 USDT*</p>
+                  <p class="card-text price">11,500 USDT*</p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#bnkModal">Купить</a>
                 </div>
               </div>
@@ -869,11 +874,11 @@
           </div>
           </div>
         </section>
-        <section >
+        <section class="contact-us">
           <div id='wrapper' class="container-fluid map-wrapper">
             <div id="map" style="width: 100%; height: 30vw"></div>
             <div id="over_map">
-              <div class="col-md-2 contact-block text-center shadow">
+              <div class="col-md-2 col-sm-12 contact-block text-center shadow">
                 <h2 class="">Контактные данные</h2>
                 <p class="py-3">Республика Беларусь
                   г. Минск,
@@ -896,8 +901,8 @@
         <hr>
         <footer>
           <div class="container-fluid main-footer">
-            <div class="row">
-              <div class="col-md-5">
+            <div id="footer-parent" class="row">
+              <div id="or1" class="col-md-5 col-sm-12">
                 <div class="logo-holder">
                   <img src="assets/svg/header_logo.svg" alt="">
                 </div>
@@ -906,7 +911,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-2">
+              <div id="or2" class="col-md-2 col-sm-12">
                 <!-- <p class="footer__column">Адрес</p> -->
                 <p class="footer__info py-2">Республика Беларусь
                   г. Минск,
@@ -914,12 +919,12 @@
                   4 этаж, 63 офис</p>
                 <a href="" class="footer_link">показать на карте</a>
               </div>
-              <div class="col-md-2">
+              <div id="or3" class="col-md-2 col-sm-12">
                 <!-- <p class="footer__column ">Режим работы</p> -->
                 <p class="footer__info py-2"><b>ПН-ПТ</b> 9:00-18:00<br><b>СБ-ВС</b> Выходной</p>
                 <p class="footer__info py-4"><b>Прием звонков:</b> круглосуточно</p>
               </div>
-              <div class="col-md-3">
+              <div id="or4" class="col-md-3 col-sm-12">
                 <!-- <p class="footer__column ">Контакты</p> -->
                 <a href="tel: +375(29)664-94-34" class="footer__info telephone py-3 ps-3">+375(29)664-94-34</a>
                 <a href="" class="footer_link call-back shadow-sm" type="btn" data-bs-toggle="modal" data-bs-target="#bnkModal">Обратный звонок</a>
@@ -1023,6 +1028,13 @@
   document.querySelectorAll('.link').forEach((elem) => {
     elem.addEventListener('click', handleClickLink);
   });
+  </script>
+  <script>
+    $(function() {
+  $(document).click(function (event) {
+    $('.navbar-collapse').collapse('hide');
+  });
+});
   </script>
       </body>
 </html>

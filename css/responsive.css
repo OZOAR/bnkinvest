@@ -34,7 +34,7 @@
     }
     .main-carousel .slide-info .caption-block p {
         font-size: 0.9rem !important;
-        padding-top: 4rem !important;
+        padding-top: 2rem !important;
     }
     .main-carousel .slide-info .caption-block button {
         width: 12rem !important;
@@ -195,10 +195,10 @@
     .navbar-toggler:focus{
         border: none !important;
     }
-    .mobile-header .nav-link {
+    .mobile-header .nav-elem {
         cursor: pointer;
     }
-    .mobile-header .nav-link>img {
+    .mobile-header .nav-elem>img {
         width: 2vw;
     }
     .navbar-nav {
@@ -206,13 +206,156 @@
         padding-top: 1rem;
         padding-left: 1rem;
     }
-    .nav-link {
+    .nav-elem {
         font-family: 'Gilroy-Medium';
         font-size: 1.3rem;
         color: rgb(35, 34, 34) !important;
         padding-bottom: 1.2rem;
         text-decoration: underline 2px #F4C644;
     }
-}
+    .mobile-header .social {
+        /* margin: 0 auto; */
+        margin-left: 3vh;
+        /* display: inline-block !important; */
+        flex: center;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .mobile-header .social img {
+        width: 6vh;
+        /* display: inline-block; */
+    }
+    .mobile-header .call-bnt {
+        width: 80% !important;
+    }
+    .main-carousel .carousel {
+        width: 90% !important;
+        /* margin-right: 0 !important; */
+        /* margin-left: 0 !important; */
+    }
+    .main-carousel .slide-image > img {
+        margin-top: -20vh !important; 
+        width: 28vh !important;
+        margin-left: 15% !important;
+        margin-bottom: 0 !important;
+    }
+    .main-carousel .slide-info .caption-block img {
+        width: 15vh !important;
+    }
+    .main-carousel .slide-info .caption-block h1 {
+        font-size: 1.2rem !important;
+        width: 70%  !important;
+        top: 10vh !important;
+    }
+    .main-carousel .slide-info .caption-block p {
+        font-size: 0.8rem !important;
+        padding-top: 15vh !important;
+        padding-left: 10vw !important;
+    }
+    .mobile-py4 {
+        margin-top: 3rem;
+    }
+    .carousel-caption  {
+        display: none !important;
+    }
+    .slider-btn-mobile {
+        display: block !important;
+        border-radius: 10px;
+        background-color: #F4C644;
+        margin: 0 auto;
+        font-family: 'Gilroy-Medium';
+        font-size: 1.1rem;
+        width: 15rem;
+        margin-top: 5vh !important;
+        height: 47px !important;
+    }
+    .slider-btn {
+        display: none !important;
+    }
+    .carousel-item {
+        /* height: 3rem !important; */
+    }
+    .contact-us {
+        height: auto !important;
+        display: block;
+    }
+    #over_map {
+        display: block !important;
+        position: relative !important;
+        left: 0 !important;
+    }
+    #map {
+        display: none !important;
+    }
+    .contact-block {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .contact-block p {
+        font-size: 1rem !important;
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    .contact-block a {
+        font-size: 1rem !important;
+
+    }
+    .contact-block__wrapper button {
+        font-size: 1rem !important;
+        margin-top: 2vh !important;
+    }
+    .contact-block .social {
+        margin-top: 1vh !important;
+    }
+    .contact-block .social a>img{
+        width: 2.4rem !important;
+    }
+    .main-footer .logo-holder img {
+        width: 8rem !important;
+    }
+    #footer-parent {
+        display:flex;
+        flex-flow: column;
+    }
+    .main-footer .social a>img {
+        width: 2.5rem !important;
+        margin-left: 0.2vh !important;
+    }
+    .main-footer .social  {
+        margin: 0 auto !important;
+        display: block !important;
+        margin-bottom: 2vh !important;
+    }
+    #or1{order:4; margin-top: 1rem;}
+    #or2{order:1;}
+    #or3{order:2;}
+    #or4{order:3;}
+    .main-footer .row {
+        padding-left: 4vw !important;
+    }
+    .main-footer .disclaymer-holder p {
+        font-size: 0.6rem !important;
+    }
+    .main-footer .call-back {
+        margin: 0 auto !important;
+        width: 80% !important;
+        font-size: 1.1rem !important;
+        display: none !important;
+    }
+    .main-footer .telephone {
+        margin: 0 auto;
+        text-align: center;
+        display: none;
+    }
+    .main-footer .footer__info {
+        padding-bottom: 0 !important;
+        font-size: 1rem !important;
+    }
+    .main-footer .col-sm-12 {
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+}   
+
 
 
