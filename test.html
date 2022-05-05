@@ -1,23 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
+<main>
+  <section id="html">HTML</section>
+  <section id="css">CSS</section>
+  <section id="js">JS</section>
+</main>
+<nav>
+  <ul>
+    <li class="link" data-block="html">HTML</li>
+    <li class="link" data-block="css">CSS</li>
+    <li class="link" data-block="js">JS</li>
+  </ul>
+</nav>
+
 <style>
-.hide {
-  display: none;
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  box-sizing: border-box;
+
 }
-    
-.myDIV:hover + .hide {
-  display: block;
-  color: red;
+
+
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 100px;
 }
+
+#html {
+  background-color: #f3671c;
+}
+#css {
+  background-color: #0071ba;
+}
+#js {
+  background-color: #e7a307;
+}
+
+
 </style>
-</head>
-<body>
+<script>
+  function handleClickLink(event) {
+  const block = event.target.dataset.block;
+  console.log(block)
+  document.getElementById(block).scrollIntoView({ behavior: 'smooth'});
+}
 
-<h2>Display an Element on Hover</h2>
-
-<div class="myDIV">Hover over me.</div>
-<div class="hide">I am shown when someone hovers over the div above.</div>
-
-</body>
-</html>
+document.querySelectorAll('.link').forEach((elem) => {
+  elem.addEventListener('click', handleClickLink);
+});
+</script>

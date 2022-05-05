@@ -75,7 +75,7 @@
     font-style: normal;
     font-display: swap;
 }
-p , h1, h2, h3, h4, h5 {
+p , h1, h2, h3, h4, h5, a, img, li {
     caret-color: transparent !important;
     letter-spacing: 0.03rem;
 
@@ -151,6 +151,9 @@ body {
 }
 .main-header .brand-img {
     width: 12vw;
+}
+.main-header .nav-link {
+    cursor: pointer;
 }
 .main-header .nav-link>img {
     width: 2vw;
@@ -888,7 +891,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
 .features__descr__text {
     padding-top: 3vh;
     font-family: 'Gilroy-Regular';
-    font-size: 1.0vw;
+    font-size: 1.1vw;
+}
+.features__descr__text > a {
+    color: #3f3e3e;
+    text-decoration: underline #F4C644 solid 3px;
 }
 .modal-title {
     font-family: 'Gilroy-Semibold';

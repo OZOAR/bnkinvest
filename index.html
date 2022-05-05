@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head> 
         <meta charset="utf-8"> 
@@ -31,10 +32,10 @@
 
 
               <ul class="nav col-md-4 col-md-auto col-sm-4 mb-2 justify-content-center mb-md-0 navigation">
-                  <li><a href="#" class="nav-link px-2 link-secondary hover-underline-animation">Главная</a></li>
-                  <li><a href="#" class="nav-link px-2 link-dark hover-underline-animation">Улуги</a></li>
-                  <li><a href="#" class="nav-link px-2 link-dark hover-underline-animation">О нас</a></li>
-                  <li><a href="#" class="nav-link px-2 link-dark hover-underline-animation">Контакты</a></li>
+                  <li><a href="https://bnkcrypto.net" class="nav-link px-2 link-secondary hover-underline-animation">Главная</a></li>
+                  <li class="link nav-link px-2 link-dark hover-underline-animation" data-block="miner_catalog">Майнеры</li>
+                  <li class="link nav-link px-2 link-dark hover-underline-animation" data-block="hosting">Хостинг</li>
+                  <li class="link nav-link px-2 link-dark hover-underline-animation" data-block="contacts">Контакты</li>
               </ul>
               <ul class="nav col-md-5 col-sm-6 text-end social">
                   <li><a href="https://t.me/bnkcrypto_sales" target="_blank" class="nav-link px-2 shaking"><img src="assets/img/telegram_white.png" alt="" onmouseover="this.src='assets/img/telegram_y.png'" onmouseout="this.src='assets/img/telegram_white.png'"></a></li>
@@ -186,7 +187,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section >
           <div class="container advantages ">
             <img src="assets/svg/templ_main_right_2.svg" class="background-template" alt="">
             <div class="advantages__title">
@@ -247,7 +248,8 @@
               </table>
             </div>
           </div>
-          <div class="container-fluid product-wrapper">
+          <div id="miner_catalog"></div>
+          <div  class="container-fluid product-wrapper">
             <div class="product-bar row text-center ">
               <div  class="col-md-3 product-bar__inner ">
                 <div id="cat1" onClick="makeSound(this.id)" class="product-bar__elem active shadow-sm pe-1"><p>GPU фермы</p></div>
@@ -743,15 +745,15 @@
             </div>
           </div>
         </section>
-        <section>
+        <section id="hosting">
           <div class="container about-us">
             <div class="row about-us__title">
-              <h2>С чего все начиналось ?</h2>
+              <h2>Промышленный дата-центр</h2>
             </div>
             <div class="row my-5">
               <div class="col-md-6">
                 <div class="about-us__inner pe-2">
-                  <img src="assets/img/tec64.png" class="" alt="">
+                  <img src="assets/img/fabric.png" class="" alt="">
                 </div>
                 <div class="about-us__inner pe-2 my-3">
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -815,11 +817,8 @@
                   <img src="assets/svg/templ_column_sepr.svg" alt="">
                 </div>
                 <div class="col-md-11">
-                  <h3>Предоставляем оборудование в  лизинг</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to make a type specimen
-                    Lorem Ipsum passages, and more recently with desktop pub.</p>
+                  <h3>Официальный пассивный доход</h3>
+                  <p>Устанавливая ваше майниг оборудование в дата-центр BNKcrypto вы получаете официальный пассивный доход на свой расчётный счет.</p>
                 </div>
               </div>
             </div>
@@ -843,7 +842,7 @@
                 </div>
                 <div class="col-md-11">
                   <h3>Круглосуточная поддержка</h3>
-                  <p>Техническая поддержка всегда находится на связи и поможет решить любой технический вопрос по работе вашего майнера, а также вовреся подскажем актуальные настройки для </p>
+                  <p>Техническая поддержка всегда находится на связи и поможет решить любой технический вопрос по работе вашего майнера, а также вовремя подскажем актуальные настройки для оборудования</p>
                 </div>
               </div>
             </div>
@@ -856,16 +855,14 @@
               <div class="templ_holder">
                 <img src="assets/svg/templ_line.svg" alt="">
               </div>
-                <p class="features__descr__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen
-                  Lorem Ipsum passages, and more recently with desktop pub.</p>
+                <p class="features__descr__text">Все майнинг-фермы компании BNKcrypto производятся на базе операционной системы <a href="https://hiveon.com/os/" target="__blank">HiveOS</a>. Благодаря HiveOS вы получаете возможность полного удаленного контроля вашего оборудования, а также круглосуточную аналитику эффективности процесса майнинга, которую удобно просматривать в мобильном приложении.</p>
+                <div id="contacts"></div>
 
             </div>
           </div>
           </div>
         </section>
-        <section>
+        <section >
           <div id='wrapper' class="container-fluid map-wrapper">
             <div id="map" style="width: 100%; height: 30vw"></div>
             <div id="over_map">
@@ -1009,5 +1006,16 @@
 
               }
       </script>
+<script>
+  function handleClickLink(event) {
+    const block = event.target.dataset.block;
+    console.log(block)
+    document.getElementById(block).scrollIntoView({ behavior: 'smooth'});
+  }
+
+  document.querySelectorAll('.link').forEach((elem) => {
+    elem.addEventListener('click', handleClickLink);
+  });
+  </script>
       </body>
 </html>
