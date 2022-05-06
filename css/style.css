@@ -510,6 +510,7 @@ body {
     font-family: 'Gilroy-Regular';
     font-size: 1.1vw;
     text-decoration: underline 2px solid #F4C644;
+    text-align: left !important;
 }
 .product-menu .card:hover > img {
     width: 10vw;
