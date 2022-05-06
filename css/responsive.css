@@ -403,6 +403,10 @@
     .product-menu .card {
         height: auto !important;
     }
+    .product-menu .card:hover {
+        transform: scale(1.0) !important;
+        height: auto !important;
+    }
     .product-menu .card h5 {
         font-size: 1.2rem !important;
     }
