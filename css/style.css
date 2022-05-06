@@ -75,6 +75,9 @@
     font-style: normal;
     font-display: swap;
 }
+.w60 {
+    width: 60% !important;
+}
 p , h1, h2, h3, h4, h5, a, img, li {
     caret-color: transparent !important;
     letter-spacing: 0.03rem;
@@ -376,7 +379,7 @@ body {
 }
 .btn-hover {
     font-family: 'Gilroy-Regular';
-    font-size: 1.4vw !important;
+    font-size: 1.4vw ;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
@@ -410,7 +413,6 @@ body {
 }
 
 .product-wrapper {
-    /* background-color: #fff; */
     margin-top: 7rem;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -421,13 +423,11 @@ body {
     font-size: 1.1vw;
 }
 .product-bar {
-    /* background-color: #dbd9d9; */
     border-radius: 12px;
     margin-right: 8vw;
     margin-left: 8vw;
     line-height: 45px;
     cursor: pointer;
-    
 }
 .product-bar p {
     font-family: 'Gilroy-Medium';
@@ -438,8 +438,6 @@ body {
     border-radius: 12px;
     text-decoration: underline #F4C644 3px;
 }  
-
-
 .product-bar__elem {
     padding-top: 15px;
     padding-bottom: 1px;

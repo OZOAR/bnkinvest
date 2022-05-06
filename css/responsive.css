@@ -30,11 +30,12 @@
         top: 5rem !important;
     }
     .main-carousel .carousel .carousel-item {
-        height: 75vh !important;
+
+        padding-bottom: 0 !important;
     }
     .main-carousel .slide-info .caption-block p {
         font-size: 0.9rem !important;
-        padding-top: 2rem !important;
+        padding-top: 3rem !important;
     }
     .main-carousel .slide-info .caption-block button {
         width: 12rem !important;
@@ -233,10 +234,12 @@
         /* margin-right: 0 !important; */
         /* margin-left: 0 !important; */
     }
+    .main-carousel .slide-image {
+        text-align: center !important;
+    }
     .main-carousel .slide-image > img {
-        margin-top: -20vh !important; 
-        width: 28vh !important;
-        margin-left: 15% !important;
+        margin-top: -5vh !important; 
+        width: 30vh !important;
         margin-bottom: 0 !important;
     }
     .main-carousel .slide-info .caption-block img {
@@ -249,7 +252,7 @@
     }
     .main-carousel .slide-info .caption-block p {
         font-size: 0.8rem !important;
-        padding-top: 15vh !important;
+        padding-top: 20vh !important;
         padding-left: 10vw !important;
     }
     .mobile-py4 {
@@ -263,17 +266,17 @@
         border-radius: 10px;
         background-color: #F4C644;
         margin: 0 auto;
-        font-family: 'Gilroy-Medium';
-        font-size: 1.1rem;
+        font-family: 'Gilroy-Semibold';
+        font-size: 1.2rem;
         width: 15rem;
-        margin-top: 5vh !important;
-        height: 47px !important;
+        margin-top: 10vh !important;
+        height: 57px !important;
     }
     .slider-btn {
         display: none !important;
     }
-    .carousel-item {
-        /* height: 3rem !important; */
+    .main-carousel .background-template {
+        width:30vh !important;
     }
     .contact-us {
         height: auto !important;
@@ -354,6 +357,105 @@
     .main-footer .col-sm-12 {
         text-align: center !important;
         margin: 0 auto !important;
+    }
+    .advantages {
+        display: none ;
+        width: 100% !important;
+        margin-top: 7rem !important;
+    } 
+    .advantages .background-template {
+        width: 30vh !important;
+    }
+    .product-wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        height: 180rem !important;
+    }
+    .product-bar {
+        margin-bottom: 40px !important;
+    }
+    .product-menu .card {
+        margin-bottom: 2rem !important;
+        height: auto !important;
+    }
+    .product-menu .product-table {
+        display: table !important;
+    }
+    .product-menu .product-table .column {
+        font-size: 1rem !important;
+        text-align: left !important;
+    }
+    .product-menu .product-table .data {
+        font-size: 1rem !important;
+        
+    }
+    .product-menu .card-img, .card-img-top {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    .product-menu .card {
+        height: auto !important;
+    }
+    .product-menu .card h5 {
+        font-size: 1.2rem !important;
+    }
+    .product-menu .card .price {
+        font-size: 1.2rem !important;
+        text-decoration: underline 3px solid #F4C644;
+        margin-bottom: 2rem !important;
+    }
+    .product-bar__elem .active {
+        border: solid #F4C644 px !important; 
+    }
+    .product-bar__elem {
+        margin-bottom: 0.4rem;
+    }
+    .product-bar__elem p{
+        font-size: 1rem !important;
+    }
+    .product-menu .card a {
+        line-height: 35px !important; 
+        width: 70% !important;
+        font-size: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .btn-hover {
+        width: 90% !important;
+        font-size: 1.4rem !important;
+    }
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    .magnet-block {
+        padding-bottom: 20px !important;
+    }
+    .magnet-block h2 {
+        padding-left: 0 !important;
+        text-align: center !important;
+    }
+    .magnet-block p {
+        font-size: 1rem !important;
+        margin-left: 0 !important;
+        padding-top: 10px !important;
+        text-align: center !important;
+    }
+    .magnet-block form {
+        margin-top: 0 !important;
+    }
+    .magnet-block .image-wrapper img {
+        display: none !important;
+    }
+    .magnet-block input {
+        font-size: 1rem !important;
+        width: 100% !important;
+        padding-left: 10px !important;
+        margin-left: 0 !important;
+    }
+    .about-us {
+        margin-top: 30px;
+    }
+    .about-us__inner p {
+        font-size: 0.8rem;
     }
 }   
 
