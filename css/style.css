@@ -417,7 +417,10 @@ body {
     padding-right: 2rem;
     padding-left: 2rem;
 }
-
+.product-wrapper .about-us__title {
+    margin-left: 8.5vw;
+    margin-bottom: 5vh;
+}
 .product-wrapper .disclaymer {
     font-family: 'Gilroy-Regular';
     font-size: 1.1vw;
