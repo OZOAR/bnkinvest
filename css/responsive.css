@@ -211,7 +211,7 @@
         font-family: 'Gilroy-Medium';
         font-size: 1.3rem;
         color: rgb(35, 34, 34) !important;
-        padding-bottom: 1.2rem;
+        padding-bottom: 1.8rem;
         text-decoration: underline 2px #F4C644;
     }
     .mobile-header .social {
@@ -410,14 +410,20 @@
         text-decoration: underline 3px solid #F4C644;
         margin-bottom: 2rem !important;
     }
+    .product-wrapper .row>* {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
     .product-bar__elem .active {
         border: solid #F4C644 px !important; 
     }
     .product-bar__elem {
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.6rem;
+        line-height: 20px !important;
+        /* background-color: #fff !important   ; */
     }
     .product-bar__elem p{
-        font-size: 1rem !important;
+        font-size: 0.6rem !important;
     }
     .product-menu .card a {
         line-height: 35px !important; 
@@ -462,6 +468,45 @@
     }
     .about-us__inner p {
         font-size: 0.8rem;
+    }
+    .features {
+        padding-top: 2rem !important;
+        width: 90% !important;
+    }
+    .features__header p {
+        font-size: 0.8rem !important;
+        letter-spacing: normal !important;
+        padding-bottom: 3rem !important;
+    }
+    .features__header img {
+        display: none !important;
+    }
+    .fetures__holder {
+        /* width: 10%; */
+    }
+    .fetures__holder img {
+        border: 0 none;
+        display: inline-block;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    
+    .features__body_row h3 {
+        font-size: 1.4rem !important;
+    }
+    .features__body_row p {
+        font-size: 0.9rem !important;
+    }
+    .features__footer .image-holder img {
+        width: 20rem !important;
+        
+    }
+    .features__footer .templ_holder {
+        width: 3.5rem !important;
+    }
+    .features__descr__text {
+        font-size: 0.8rem !important;
     }
     .modal b{
         font-family: 'Gilroy-Bold' !important;
