@@ -508,6 +508,9 @@
     .features__descr__text {
         font-size: 0.8rem !important;
     }
+    .features_descr__block {
+        padding-left: 0 !important;
+    }
     .modal b{
         font-family: 'Gilroy-Bold' !important;
     }
