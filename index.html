@@ -33,8 +33,8 @@
 
               <ul class="nav col-md-4 col-md-auto col-sm-4 mb-2 justify-content-center mb-md-0 navigation">
                   <li><a href="https://bnkcrypto.net" class="nav-link px-2 link-secondary hover-underline-animation">Главная</a></li>
-                  <li class="link nav-link px-2 link-dark hover-underline-animation" data-block="miner_catalog">Майнеры</li>
-                  <li class="link nav-link px-2 link-dark hover-underline-animation" data-block="hosting">Хостинг</li>
+                  <li class="link nav-link px-2 link-dark hover-underline-animation" data-block="miner_catalog">Оборудование</li>
+                  <li class="link nav-link px-2 link-dark hover-underline-animation" data-block="hosting">Дата-центр</li>
                   <li class="link nav-link px-2 link-dark hover-underline-animation" data-block="contacts">Контакты</li>
               </ul>
               <ul class="nav col-md-5 col-sm-6 text-end social">
@@ -56,8 +56,8 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav text-center">
                   <li><a href="https://bnkcrypto.net" class="nav-elem px-2 link-secondary hover-underline-animation">Главная</a></li>
-                  <li class="link nav-elem px-2" data-block="miner_catalog">Майнеры</li>
-                  <li class="link nav-elem px-2" data-block="hosting">Хостинг</li>
+                  <li class="link nav-elem px-2" data-block="miner_catalog">Оборудование</li>
+                  <li class="link nav-elem px-2" data-block="hosting">Дата-центр</li>
                   <li class="link nav-elem px-2" data-block="contacts">Контакты</li>
                 </ul>
                 <div class="social text-center">
@@ -420,7 +420,7 @@
                       </tbody>
                   </table>
                   <p class="card-text price">9,900 USDT*</p>
-                  <a href="#" class="btn">Купить</a>
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#bnkModal">Купить</a>
                 </div>
               </div>
               <div class="col-md-3 col-sm-12">
@@ -899,8 +899,7 @@
             </div>
           </div>
         </section>
-        <hr>
-        <footer>
+          <footer>
           <div class="container-fluid main-footer">
             <div id="footer-parent" class="row">
               <div id="or1" class="col-md-5 col-sm-12">
@@ -948,7 +947,7 @@
               </div>
               <div class="modal-body">
                 <div class="mb-3">
-                  <p>Оставьте заявку на обратный звонок и наш менеджер свяжется с вами в течении нескольких минут</p>
+                  <p>Оставьте заявку на обратный звонок и <b>наш менеджер свяжется</b> с вами в течении нескольких минут</p>
                 </div>
                 <form action="POST">
                   <div class="mb-3">

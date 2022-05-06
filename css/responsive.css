@@ -258,6 +258,9 @@
     .mobile-py4 {
         margin-top: 3rem;
     }
+    .mobile-footer .ps-3 {
+        padding: 0 !important;
+    }
     .carousel-caption  {
         display: none !important;
     }
@@ -276,7 +279,7 @@
         display: none !important;
     }
     .main-carousel .background-template {
-        width:30vh !important;
+        width:28vh !important;
     }
     .contact-us {
         height: auto !important;
@@ -329,12 +332,15 @@
         display: block !important;
         margin-bottom: 2vh !important;
     }
+    .main-footer .row {
+        padding: 0 !important;
+    }
     #or1{order:4; margin-top: 1rem;}
     #or2{order:1;}
     #or3{order:2;}
     #or4{order:3;}
     .main-footer .row {
-        padding-left: 4vw !important;
+        /* padding-left: 4vw !important; */
     }
     .main-footer .disclaymer-holder p {
         font-size: 0.6rem !important;
@@ -456,6 +462,18 @@
     }
     .about-us__inner p {
         font-size: 0.8rem;
+    }
+    .modal b{
+        font-family: 'Gilroy-Bold' !important;
+    }
+    .modal-body input {
+        line-height: 42px !important;
+        border-radius: 10px ;
+    }
+    .modal-footer button {
+        line-height: 47px !important;
+        font-size: 1.2rem !important;
+        width: 70% !important;
     }
 }   
 
