@@ -191,7 +191,6 @@
     }
     .navbar-light .navbar-toggler {
         border: none !important;
-
     }
     .navbar-toggler:focus{
         border: none !important;
@@ -357,8 +356,10 @@
         display: none;
     }
     .main-footer .footer__info {
-        padding-bottom: 0 !important;
+        padding-bottom: 10px !important;
         font-size: 1rem !important;
+        width: 80% !important;
+        margin: 0 auto !important;
     }
     .main-footer .col-sm-12 {
         text-align: center !important;

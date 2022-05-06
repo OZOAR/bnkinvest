@@ -587,6 +587,9 @@ body {
     border-radius: 10px;
     height: auto;
 }
+.advantages thead {
+    line-height: 7vh;
+}
 .advantages .background-template {
     position: absolute;
     width: 50vh;
