@@ -577,6 +577,19 @@ body {
 .about-us__inner img {
     width: 100%;
 }
+.about-us ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+.about-us ul li:before {
+	content: "-";
+	position: absolute;
+    color: #F4C644;
+    font-weight: bolder;
+	left: 0;
+}
 .bby {
     border-bottom: 4px solid #F4C644;
 }
